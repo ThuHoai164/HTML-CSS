@@ -1,0 +1,66 @@
+
+/* Đăng nhap*/
+body{
+   text-align: center;
+    font-family: sans-serif;
+    justify-content: center;
+ }
+ 
+ .welcome{
+     width :350px;
+     height:400px;
+     background-color: white;
+     border: 1px solid grey;
+    margin: 100px 100px 100px 500px;
+     border-radius: 10px;
+    align-items: center;
+    /* background-color: rgb(146, 146, 173); */
+
+ }
+ 
+ .welcome-heading{
+     display: block;
+     color: grey;
+     border-radius: 10px;
+ }
+ .icon1{
+    color: rgb(171, 85, 85);
+ }
+ 
+ input{
+     width: 250px;
+     height:40px;
+     border-radius: 10px;
+     border: 1px solid grey;
+     margin-bottom: 10px;
+ }
+ 
+ .icon{
+    position: relative;
+    right: 25px;
+ }
+ 
+ #input2{
+     width: 30px;
+     height:15px;
+     margin-bottom: 20px;
+ }
+ 
+ button{
+     width: 250px;
+     height:40px;
+     border-radius: 10px;
+     border: none;
+     margin-bottom: 35px;
+     background-color:blue;
+ }
+#sign-up{
+     color: white;
+     text-decoration: none;
+ } 
+.forgot{
+    width: 300px;
+    display: block;
+    text-align: right;
+}
+

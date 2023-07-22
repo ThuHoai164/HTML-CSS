@@ -1,0 +1,387 @@
+/* Menu tìm kiếm  */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.Menu{
+    display: fixed;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    position: relative;
+    position: fixed;
+    z-index: 10;
+    opacity: 0.7;
+}
+
+.root{
+    height: 10%;
+    width: 100%;
+    /* box-sizing: border-box; */
+    text-align: center;
+    align-items: center;
+}
+
+.root-pc a{
+    float:left;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    color: black;
+    text-decoration: none; 
+    display: block;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* Mobile */
+.root-mobile-btn{
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    display: none;
+    float: left;
+    /* margin: 8px; */
+}
+.root-overlay{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    display: none;
+    animation:  linear 0.2s;
+}
+
+.root-mobile{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    max-width: 100%;
+    background-color: #fff;
+    /* display: block; */
+    transform: translateX(-100%);
+    /* cách sử dụng trượt */
+    transition: transform linear 0.2s;    
+}
+.root-mobile-list{
+    margin-top: 24px;
+}
+
+.root-mobile-link{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    
+}
+.root-mobile-close{
+    width: 25px;
+    color: black;
+    position:absolute;
+    top:1rem;
+    right: 1rem;
+}
+.nav-input{
+    display: none;
+}
+.nav-input:checked ~ .root-overlay{
+    display: block;
+}
+.nav-input:checked ~ .root-mobile{
+    transform: translateX(0%);
+}
+@media (max-width:1023px) {
+    .root-mobile{
+        display: block;
+    }
+    .root-pc{
+        display: none;
+    }
+}
+
+
+
+ /* Kí hiệu */
+/* button{
+    float: right;
+    flex-wrap: nowrap;
+    border-radius: 30px;
+    background-color: antiquewhite;
+    margin-left:1000px;
+    margin-right:400px;
+    margin-top: 10px;
+} */
+#dangki{
+    text-decoration: none;
+}
+
+#dangnhap{
+    text-decoration: none;
+}
+.kihieu button{
+    display: block;
+    float: right ;
+    border-radius: 30px;
+    width:80px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: antiquewhite;
+}
+
+.kihieu1{
+    display: none;
+}
+
+.kihieu2{
+    display: block;
+}
+
+#chaomung{
+    font-size: 18px;
+    float: right;
+    color: red;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* #id1{
+    height:40px;
+    width: 40px;  
+}
+#id2{
+    height:40px;
+    width: 40px;  
+} */
+
+/* logo*/
+.logo a{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 15%;
+    width: 30px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+}
+
+/* slide show */
+.mySlides3 {display:none; width:100%}
+.display-container{position:relative}
+
+/*---Css Nút qua lại---*/
+.button-left{
+    left:1%; 
+    font-size:20px
+}
+.button-right{
+    right:1%; 
+    font-size:20px 
+}
+.image-button{
+    border:none;
+    display:inline-block;
+    padding:10px;
+    height:50px;
+    vertical-align:middle;
+    overflow:hidden; 
+    color:#fff;
+    background:#000;
+    position:absolute;
+    top:calc(50% - 25px); 
+    opacity:0.5;
+}
+.image-button:hover{
+    color:#000;
+    background:#ccc;
+}
+
+/* Giới thiệu*/
+.gioithieu{
+    display: block;
+    text-align: center;
+    /* align-items: center; */
+}
+#tieude{
+    margin-top: 50px;
+}
+#doanvan{
+    display: inline-block;
+    margin: 30px 40px;
+    width: 450px;
+}
+
+/* kẻ ngang */
+.kengang{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 25px 35px;
+    /* border: 2px solid rebeccapurple; */
+}
+.kengang ::after{
+    content: "";
+    display: block;
+    border-bottom: 2px solid black ;
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    z-index: -1;
+}
+ .kengang span i{
+    padding: 0px 40px;
+ }
+/* Nội dung và hình ảnh */
+.ndung{
+    display: block;
+    margin-top: 2%;
+    align-items: center;
+    text-align: center;
+}
+.ndung div img{   
+    height: 40%;
+    width: 30%;    
+}
+.ndung1 div img{
+    display: block;
+    margin-right: 20%; 
+}
+.ndung1 #vban{
+    float: left;
+    display: block;
+    padding: 10% 5%;
+    height: 40%;
+    width: 20%;
+    margin-left: 20%;
+}
+.ndung1 #vban div{
+    display: block;
+    padding-top: 1.25rem;
+}
+.ndung #Seemore {
+    display: block;
+    background-color: gray;
+    font-size: 13px;
+    padding: 5%;
+    margin: 5% 35%;
+    border: none;
+}
+.ndung #Seemore a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.ndung2{
+    display: block;
+    margin-top: 10%;
+}
+.ndung2 div img{
+    display: block;
+    margin-left: 20%; 
+}
+.ndung2 #vban1 {
+    float: right;
+    display: block;
+    padding: 10% 5%;
+    height: 40%;
+    width: 20%;
+    margin-right: 20%;
+}
+.ndung2 #vban1 div{
+    display: block;
+    padding-top: 10%;
+}
+#nt{
+    display: block;
+    margin-top: 10%;
+}
+
+/* View */
+.view{
+    font-size: 20px;
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+    
+}
+.view a{
+    color: rgb(216, 212, 208);
+}
+
+.v1{
+    width: 100%;
+}
+.anhv1{
+    z-index: 2;
+    /* position: relative; */
+    display: block;
+    text-align: center;
+    align-items: center;
+    /* margin-top: -15%; */
+    font-size: 75%;
+    border: 2px solid saddlebrown;
+}
+.v2{
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-top: -15%;
+    font-size: 75%;
+    border: 2px solid rgb(165, 90, 36);
+}
+.v3{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Contact{
+    margin-top: 3%;
+    border-radius: 40px;
+    padding: 1% 2%;
+    background-color: bisque;
+    border: none;
+    text-decoration: none;
+} 
+.view1 .v2 #Contact a{
+    text-decoration: none;
+    color: black;
+  
+}
+/* Liên kết */
+.lienket{
+    display: block;
+    margin: 10% 40%;
+    width: 40%;
+    height: 20%;
+}
+.lienket div a{
+    display: block;
+    float: left;
+    padding: 1%;
+    font-size: 90%;
+    color:white;
+}
+
+/* design */
+.design{
+    /* display: block; */
+    margin: 10px 50px;
+    font-size: 10px;   
+    text-align: center;
+    text-decoration: none;
+}

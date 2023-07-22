@@ -1,0 +1,85 @@
+/* Dăng kí */
+body{
+   
+    font-family: sans-serif;
+    
+ }
+ 
+ .account {
+     width :350px;
+     height:450px;
+     background-color: white;
+     border: 1px solid grey;
+     margin: 100px 100px 100px 500px;
+     border-radius: 10px;
+     text-align: center;
+ }
+ 
+ .account-heading{
+     display: block;
+     color: grey;
+     border-radius: 10px;
+ }
+ .icon1{
+    color: yellow;
+ }
+ 
+ input{
+     width: 250px;
+     height:40px;
+     border-radius: 10px;
+     border: 1px solid grey;
+     margin-bottom: 10px;
+ }
+ .icon{
+    position: relative;
+    right: 25px;
+ }
+ 
+ #input1{
+     width: 30px;
+     height:15px;
+     margin-bottom: 15px;
+ }
+ 
+ button{
+     width: 250px;
+     height:40px;
+     border-radius: 10px;
+     border: none;
+     margin-bottom: 20px;
+     background-color: lime;
+ }
+ #sign-up{
+     color: white;
+     text-decoration: none;
+     /* box-shadow: 0 5px 20px 10px lightgreen; */
+ } 
+ /* .sing-or{
+    text-align: center;
+    font-size: 20px;
+    color: beige;
+    margin: 55px auto;
+    position: relative;
+ } */
+ /* .sing-or span{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+    margin-left: 10px;
+ }
+ .sing-or:after{
+    content: "";
+    width: 250px;
+    height:1px;
+    background-color: #999;
+    position: absolute;
+    top:50%;
+    left:0px;
+ } */
+ .bi{
+    width:250px;
+ }

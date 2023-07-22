@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang = en >
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylenestspace.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>NestSpace</title>
+
+    </head>
+    <body>
+        <div class="Menu">
+            <div class="root">
+                <nav class="root-pc">
+                    <a href="https://www.nestspacedesign.com/about" class="active">About</a>
+                    <a href="https://www.nestspacedesign.com/contact" >Contact</a>
+                    <a href="https://www.nestspacedesign.com/press-release" >Press</a>
+                    <a href="https://www.nestspacedesign.com/portfolio" >Portfoli</a>
+                    <a href="https://www.nestspacedesign.com/3dimpression" >Impression</a>
+                </nav>
+                <label for="nav-mobile-input" class="root-mobile-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M96 256h320M96 176h320M96 336h320"/></svg>
+                </label>
+               
+                <input type="checkbox" name="" class="nav-input" id="nav-mobile-input">
+                
+                <label for="nav-mobile-input" class="root-overlay"></label>
+
+                <nav class="root-mobile">
+                    <label for="nav-mobile-input" class="root-mobile-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+                    </label>
+                    <nav class="root-mobile-list">
+                        <a href="https://www.nestspacedesign.com/about" class="root-mobile-link">About</a>
+                        <a href="https://www.nestspacedesign.com/contact" class="root-mobile-link">Contact</a>
+                        <a href="https://www.nestspacedesign.com/press-release" class="root-mobile-link">Press</a>
+                        <a href="https://www.nestspacedesign.com/portfolio" class="root-mobile-link">Portfoli</a>
+                        <a href="https://www.nestspacedesign.com/3dimpression" class="root-mobile-link">Impression</a>
+                    </nav>
+                    
+                </nav>
+            </div>
+            
+            <!-- kí hiệu -->
+            <!-- <div class = "kihieu">
+                <a href="https://www.facebook.com/nestspace.design"><img src="https://png.pngtree.com/element_our/md/20180506/md_5aeedeff67ded.jpg" id="id1"></a>
+                <a href="https://www.instagram.com/nestspacedesign/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" id="id2" ></a>
+            </div> -->
+
+            <!-- <div class="kihieu">
+                <a href="https://www.facebook.com/nestspace.design"> <i class="fa-brands fa-facebook"></i> </a>
+                <a href="https://www.instagram.com/nestspacedesign/"> <i class="fa-brands fa-instagram"></i></a>
+            </div> -->
+
+            <div class="kihieu"> 
+                <div class="kihieu1" >
+                    <div><button><a href="dangki.html" id="dangki">Đăng kí</a></button></div>
+                    <div><button><a href="dangnhap.html" id="dangnhap">Đăng nhập</a></button></div>
+                    <!-- <div><button type="submit" onclick="dangnhap()" id="dangnhap">Đăng nhập</button></div> -->
+                </div> 
+                
+                <div class="kihieu2">
+                    <button  id="dangxuat" onclick="dangxuat()">Đăng xuất</button>
+                    <div id="chaomung"></div>
+                </div>
+            </div>
+            <!-- logo -->
+            <div class="logo"><a href="https://www.nestspacedesign.com/">NESTSPACE</a ></div>
+        </div>
+
+        
+        <div>
+            <!-- shlie show -->
+            <div class="show">
+                <img class="mySlides3" src="anh5.jpg">
+                <img class="mySlides3" src="anh6.jpg">
+                <img class="mySlides3" src="anh7.jpg">
+
+                <button class="image-button button-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="image-button button-right" onclick="plusDivs(1)">&#10095;</button>
+
+                <div class="badge" style="width:100%">
+
+                    <span class="image-badge" onclick="currentDiv(1)"></span>
+                    <span class="image-badge" onclick="currentDiv(2)"></span>
+                    <span class="image-badge" onclick="currentDiv(3)"></span>
+                </div>
+
+                <!-- <div class="find">
+                   <button name="find" id="find_a"><a href="https://www.nestspacedesign.com/portfolio/find-alley">Find Alley</a></button>
+                   <div> | </div>
+                   <button name="more" id="more"><a href="https://www.nestspacedesign.com/portfolio/find-alley">Find Alley</a></button>
+                </div> -->
+            </div>
+            <!-- <div><img src="nen.jpg" height="100%" width="100%" ></div>  -->
+            <!-- Chuyen trang -->
+
+            <!-- giới thiệu -->
+            <div class="gioithieu">
+                <div id="tieude"><h1>Embrace every diversity in life.</h1></div>
+                <div id="doanvan">NestSpace Design, a Taipei-based interior studio, is driven by a commitment to sustainability and a belief that there are no standard solutions in design. We create unique architectural narratives on every renovation journey and incorporate metaphors. Our team continually pushes the boundaries of innovation to provide bespoke and beautiful solutions that benefit both clients and the environment.</div>
+            
+            <!-- kẻ ngang -->
+            <div>
+                <hr style ="display: inline-block;">
+                <span class="kengang"><i> Selected Project</i></span>
+            </div>
+
+            <!-- Nội dung và hình ảnh -->
+            <div class="ndung">
+                <div class="ndung1">
+                    <div id="vban">   
+                        <div><h1>Jardín del Sol  / 1 of 3</h1></div>
+                        <div> Combining the idea of a sun-filled greenhouse with the wfh conditions</div>
+                        <button name="" id="Seemore"><a href="https://www.nestspacedesign.com/portfolio/jardin-del-sol">See More</a></button>
+                    </div> 
+                    <div><img src="anh1.jpg"  id="noithat"></div>
+                </div>  
+        
+                <div class="ndung2">
+                    <div id="vban1">
+                        <div><h1>Caché / 2 of 3</h1></div>
+                        <div>Find a balance between sense and sensibility</div>
+                        <button name="" id="Seemore"><a href="https://www.nestspacedesign.com/portfolio/cache" >See More</a></button>  
+                    </div>
+                    <div><img src="anh2.jpg" alt="Ảnh nội thất" id="noithat1"></div>   
+                </div> 
+        
+                <div class="ndung1" id="nt">
+                    <div id="vban">
+                        <div><h1>Panorama / 3 of 3</h1></div>
+                        <div>Emphasize the essence and the importance of fundamental elements</div>
+                        <button name="" id="Seemore"><a href="https://www.nestspacedesign.com/portfolio/panorama" >See More</a></button>
+                    </div>
+                    <div><img src="anh3.jpg" id="noithat"></div>
+                </div>
+            </div>
+            
+            <div class="view"><a href="https://www.nestspacedesign.com/portfolio">View ALL Projects</a></div>
+
+            <div>
+                <div class="v1">
+                    <p class="anhv1">
+                        <img src="anh4.jpg">
+                    </p>
+                </div>
+                <div class="v2">
+                    <div class="v3"><h1>Tailoring a Next Space</h1></div> 
+                    <button name="Contact" id="Contact"><a href="https://www.nestspacedesign.com/contact">Contact Us</a></button>
+                </div>
+            </div>
+
+            <div class = "lienket">
+                <a href="https://www.nestspacedesign.com/about" class="active">About</a>
+                <a href="https://www.nestspacedesign.com/contact" >Contact</a>
+                <a href="https://www.nestspacedesign.com/press-release" >Press</a>
+                <a href="https://www.nestspacedesign.com/portfolio" >Portfoli</a>
+                <a href="https://www.nestspacedesign.com/3dimpression" >Impression</a>
+            </div>
+
+            <div class = "design"> &copy; NestSpace Design 2022</div>
+        
+        </div>
+    </body>
+    <script src ='nestspace.js'></script>
+</html>

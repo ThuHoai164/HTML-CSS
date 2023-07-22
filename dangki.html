@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dangki.css">
+	<!-- <link rel="stylesheet" href="boxicons/css/boxicons.css"> -->
+    <title>Đăng kí</title>
+</head>
+<body>
+    <div class="account">
+       <div class="account-heading">
+			
+            <h4><ion-icon name="person" class="icon1"></ion-icon>Create an Account</h4>
+       </div> 
+       <form>
+            <div class="input-account">
+                <input id="email" type="text" placeholder="Email">
+				<span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            </div>
+            <div class="input-account">
+                <input id="username" type="text" placeholder="User Name">
+				<span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            </div>
+            <div class="input-account">
+                <input id="password" type="password" placeholder="Password">
+				<span class="icon"><ion-icon name="key-sharp"></ion-icon></span>
+            </div>
+            <div class="input-account">
+                <input id="password2" type="password" placeholder="Confrim Password">
+				<span class="icon"><ion-icon name="reload-sharp"></ion-icon></span>
+            </div>
+            <div class="input-account">
+                <input id="input1" type="checkbox" value="hienthi">
+                <label for="input1"> I have read and agree to <a href="#">terms</a></label>
+            </div>
+			
+			<button ><a id="sign-up" href="#" onclick="signin()"> Sign Up</a></button>
+			<div class="sing-or"><span ></span></div>
+            <div class="aready">Aready a member? <a href="dangnhap.html">Login here</a></div>
+			
+            
+       </form>
+    </div>
+
+
+	<!-- icon -->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        function signin(){
+                const email = document.getElementById('email');
+				const username = document.getElementById('username');
+				const password = document.getElementById('password');
+				const password2 = document.getElementById('password2');
+
+				var flag = false;
+				if((username.value.length > 7)&&(username.value.length<17)&&(password.value.length>3)&&(password2.value==password.value)){
+					flag = true;
+				}
+				if (flag == true) {
+                    email_data = email.value;
+					localStorage.setItem("email", email_data);
+
+					username_data = username.value;
+					localStorage.setItem("username", username_data);
+
+					password_data = password.value;
+					localStorage.setItem("password", password_data);
+
+					alert("Đăng kí thành công, hệ thống sẽ đưa bạn đến trang đăng nhập");
+					let dangki = document.getElementById("sign-up");
+         		 	dangki.href = "dangnhap.html";
+				}
+				else {
+					alert("Đăng ký không thành công! Xin hãy thử lại")
+				}
+			}
+			// var a = document.getElementById('username');
+			// 	for (let i = 0; i < a.length; i++)
+			// 	{
+    		// 		if (a[i].checked)
+			// 		{
+      		// 			localStorage.setItem("signincheck",a[i].value);
+    		// 		}
+			// 	}
+			// var b = document.getElementById('password2')
+			// 	for (let i = 0; i < b.length; i++)
+			// 	{
+    		// 		if (b[i].password)
+			// 		{
+      		// 			localStorage.setItem("password",b[i].value);
+    		// 		}
+			// 	}
+			
+    </script>
+</body>
+</html>
